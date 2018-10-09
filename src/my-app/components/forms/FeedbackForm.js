@@ -22,7 +22,7 @@ class FeedbackForm extends Component {
     this.setState({ canSubmit: true });
   };
 
-  onSubmit = (model) => {
+  onSubmit = model => {
     console.info('submit', model);
   };
 

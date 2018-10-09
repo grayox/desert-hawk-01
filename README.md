@@ -28,6 +28,7 @@ Added packages:
 - `yarn add chartist`
 - [`yarn add email-validator`](https://www.npmjs.com/package/email-validator)
 - [`yarn add react-number-format`](https://www.npmjs.com/package/react-number-format)
+- [`yarn add react-redux-firebase redux-firestore`](https://youtu.be/gf5bVfVlNUM?t=104)
 
 Removed
 - [`yarn add react-phone-number-input --peer`](https://www.npmjs.com/package/react-phone-number-input)

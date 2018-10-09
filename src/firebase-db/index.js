@@ -26,7 +26,7 @@ import AppConfig from '../../src/my-app/AppConfig.js';
 //     ? prodConfig
 //     : devConfig;
 
-const config = AppConfig.firebaseCredentials;
+const config = AppConfig.fbConfig;
 
 if ( !firebase.apps.length )
 {

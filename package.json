@@ -37,6 +37,7 @@
         "react-number-format": "^3.6.0",
         "react-popper": "1.0.0",
         "react-redux": "5.0.7",
+        "react-redux-firebase": "^2.1.8",
         "react-router-config": "1.0.0-beta.4",
         "react-router-dom": "4.3.1",
         "react-scripts": "1.1.4",
@@ -45,6 +46,7 @@
         "react-table": "6.8.6",
         "react-text-mask": "5.4.2",
         "redux": "4.0.0",
+        "redux-firestore": "^0.5.8",
         "redux-thunk": "2.3.0",
         "typeface-roboto": "0.0.54",
         "velocity-react": "1.4.1"

@@ -5,7 +5,7 @@ import AssessmentIcon from '@material-ui/icons/Assessment';
 import AssignmentIcon from '@material-ui/icons/Assignment';
 
 const AppConfig = {
-  firebaseCredentials: {
+  fbConfig: {
     apiKey: "AIzaSyAOEXILaYcxjmJsJ81_WfubS_h3AQ3lLdA",
     authDomain: "green-comet-e2c85.firebaseapp.com",
     databaseURL: "https://green-comet-e2c85.firebaseio.com",
