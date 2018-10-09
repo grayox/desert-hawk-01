@@ -30,7 +30,7 @@ class ControlledExpansionPanel extends React.Component {
 
   handleChange = panel => (event, expanded) => {
     this.setState({
-      expanded: expanded ? panel : false,
+      expanded: expanded ? panel : false, 
     });
   };
 

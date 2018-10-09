@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import SplitScreen from '../SplitScreen'
 import UserMultiForm from 'my-app/components/forms/UserMultiForm';
 

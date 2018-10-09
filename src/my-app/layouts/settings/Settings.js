@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
 // import classNames from 'classnames';
@@ -10,7 +10,7 @@ import UserMultiForm from 'my-app/components/forms/UserMultiForm';
 import List from '@material-ui/core/List';
 import ListSubheader from '@material-ui/core/ListSubheader';
 import ListItem from '@material-ui/core/ListItem';
-import ListItemIcon from '@material-ui/core/ListItemIcon';
+// import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemSecondaryAction from '@material-ui/core/ListItemSecondaryAction';
 import ListItemText from '@material-ui/core/ListItemText';
 
@@ -23,10 +23,10 @@ import GeoStepper from 'my-app/components/steppers/GeoStepper';
 import Checkbox from '@material-ui/core/Checkbox';
 
 // firebase
-import firebase from '@firebase/app';
-import '@firebase/firestore';
+// import firebase from '@firebase/app';
+// import '@firebase/firestore';
 
-const db = firebase.firestore();
+// const db = firebase.firestore();
 
 const username = 'userme';
 const path = ['users', username, 'settings',].join('/');
@@ -59,30 +59,30 @@ const optionsAutomation = [
   'Text your prospect',
 ]
 
-function getSettings() {
-  db.collection(path)
-    .orderBy('timestamp', 'desc')
-    .limit(1)
-    .onSnapshot(snapshot => { // https://firebase.google.com/docs/firestore/query-data/listen
-      snapshot.docChanges().forEach(change => {
-        const data = change.doc.data();
-        // console.log("Current data\n", data);
-        this.setState({
-          ...data,
-          show: (typeof data === 'object' ? 'main' : 'greet'),
-        });
-        // if (change.type === "added") {
-        //   console.log("New city: ", change.doc.data());
-        // }
-        // if (change.type === "modified") {
-        //   console.log("Modified city: ", change.doc.data());
-        // }
-        // if (change.type === "removed") {
-        //   console.log("Removed city: ", change.doc.data());
-        // }
-      });
-    });
-}
+// function getSettings() {
+//   db.collection(path)
+//     .orderBy('timestamp', 'desc')
+//     .limit(1)
+//     .onSnapshot(snapshot => { // https://firebase.google.com/docs/firestore/query-data/listen
+//       snapshot.docChanges().forEach(change => {
+//         const data = change.doc.data();
+//         // console.log("Current data\n", data);
+//         this.setState({
+//           ...data,
+//           show: (typeof data === 'object' ? 'main' : 'greet'),
+//         });
+//         // if (change.type === "added") {
+//         //   console.log("New city: ", change.doc.data());
+//         // }
+//         // if (change.type === "modified") {
+//         //   console.log("Modified city: ", change.doc.data());
+//         // }
+//         // if (change.type === "removed") {
+//         //   console.log("Removed city: ", change.doc.data());
+//         // }
+//       });
+//     });
+// }
 
 const handleChange = name => event => {
   this.setState({

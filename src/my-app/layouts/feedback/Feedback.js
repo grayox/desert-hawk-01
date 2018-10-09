@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import SplitScreen from '../SplitScreen';
 import FeedbackForm from 'my-app/components/forms/FeedbackForm';
 

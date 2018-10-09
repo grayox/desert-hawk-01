@@ -33,7 +33,7 @@ class FeedbackForm extends Component {
 
   render() {
     const { classes, } = this.props;
-    const { canSubmit, } = this.state;
+    const { content, canSubmit, } = this.state;
 
     return (
       <Paper className="max-w-sm m-32 p-32">
@@ -42,14 +42,14 @@ class FeedbackForm extends Component {
         <form className={classes.container} noValidate autoComplete="off">
           <TextField
             className={{...classes.margin, ...classes.textField}}
+            // className={classes.textField}
             variant="outlined"
             id="feedback-form"
             label="Feedback"
             fullWidth
             multiline
             rows={5}
-            className={classes.textField}
-            value={this.state.content}
+            value={content}
             onChange={this.handleChange('content')}
             margin="normal"
           />
