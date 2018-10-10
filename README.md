@@ -11,6 +11,14 @@ Search for: `~@edit@~`
    B. /src/main/content/apps/dashboards/analytics/AnalyticsDashboardAppConfig.js
       note: to avoid collisions, might want to turn off this path/link connection at a later time
 5. /src/firebase-db/index.js -- substitute firebase credentials for const config
+6. /src/store.js
+   - add `thunk.withExtraArgument()`
+   - add `compose(...  reduxFirestore(config), reactReduxFirebase(config),`
+   - add `import config`
+7. /src/store/actions/my-actions -- copy /actions/fuse and modify
+   - /actions/index.js -- add `export * from './my-actions'`
+8. /src/store/reducers/my-reducers -- copy /reducers/fuse and modify
+   - /reducers/index.js -- add `export * from './my-reducers'`
 
 NOTES
 - add all new files to /src/my-app
@@ -29,6 +37,7 @@ Added packages:
 - [`yarn add email-validator`](https://www.npmjs.com/package/email-validator)
 - [`yarn add react-number-format`](https://www.npmjs.com/package/react-number-format)
 - [`yarn add react-redux-firebase redux-firestore`](https://youtu.be/gf5bVfVlNUM?t=104)
+- `yarn add react-materialize`
 
 Removed
 - [`yarn add react-phone-number-input --peer`](https://www.npmjs.com/package/react-phone-number-input)
