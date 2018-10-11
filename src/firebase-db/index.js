@@ -26,17 +26,16 @@ import AppConfig from '../../src/my-app/AppConfig.js';
 //     ? prodConfig
 //     : devConfig;
 
-const config = AppConfig.fbConfig;
-
 if ( !firebase.apps.length )
 {
-    firebase.initializeApp(config);
+    firebase.initializeApp(AppConfig.fbConfig);
 }
 
-const db = firebase.database();
 const auth = firebase.auth();
+const db = firebase.database();
 
 export {
+    firebase,
     auth,
-    db
+    db,
 };

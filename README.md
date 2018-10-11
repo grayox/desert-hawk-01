@@ -19,6 +19,13 @@ Search for: `~@edit@~`
    - /actions/index.js -- add `export * from './my-actions'`
 8. /src/store/reducers/my-reducers -- copy /reducers/fuse and modify
    - /reducers/index.js -- add `export * from './my-reducers'`
+9. /src/index.js -- temporarily removed <FirebaseAuth>
+   - to solve the following error in /src/store.js caused by `firebase.initializeApp()`
+   - error: Firebase: Firebase App named '[DEFAULT]' already exists (app/duplicate-app).
+10. Delete 9.
+11. /src/firebase-db/index.js -- `export firebase` because that is where `firebase.initializeApp()` happens;
+   - then `import firebase` in store.js
+   - then add `firebase` as argument to read: `reactReduxFirebase(firebase, AppConfig.fbConfig),`
 
 NOTES
 - add all new files to /src/my-app
