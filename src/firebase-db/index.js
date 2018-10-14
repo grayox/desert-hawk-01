@@ -41,7 +41,7 @@ if ( !firebase.apps.length )
   firebase.initializeApp(AppConfig.fbConfig);
   firebase.firestore();
   // console.log('firebase2\n', firebase);
-  firebase.collection('test').add({new: 'data'});
+  // firebase.collection('test').add({new: 'data'});
   // firebase.firestore().collection('test').add({new: 'data'});
 }
 
