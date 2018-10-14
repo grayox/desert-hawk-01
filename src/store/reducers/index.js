@@ -10,7 +10,10 @@ import fileManagerApp from 'main/content/apps/file-manager/store/reducers/index'
 import contactsApp from 'main/content/apps/contacts/store/reducers/index';
 import calendarApp from 'main/content/apps/calendar/store/reducers/index';
 
+import leads from 'my-app/store/reducers/my-reducer/leadsReducer';
+
 const rootReducer = combineReducers({
+    leads,
     auth,
     fuse,
     analyticsDashboardApp,

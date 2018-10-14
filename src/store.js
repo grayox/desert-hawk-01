@@ -1,9 +1,10 @@
 // source: original fuse template plus edits inspired by https://youtu.be/gf5bVfVlNUM?t=164
+// import { firestore } from './firebase-db';
 import { firebase } from './firebase-db';
 
 import { applyMiddleware, compose, createStore } from 'redux';
-// import reducers from 'store/reducers';
 import reducers from 'my-app/store/reducers';
+// import reducers from 'my-app/store/reducers/my-reducers';
 import thunk from 'redux-thunk';
 
 // begin ~@edit@~
@@ -28,6 +29,7 @@ const enhancer = composeEnhancers(
   applyMiddleware(thunk.withExtraArgument({ getFirebase, getFirestore })),
   reduxFirestore(AppConfig.fbConfig),
   reactReduxFirebase(firebase, AppConfig.fbConfig),
+  // reactReduxFirebase(firestore, AppConfig.fbConfig),
   // end ~@edit@~
 );
 

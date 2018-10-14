@@ -1,12 +1,12 @@
 import { combineReducers } from 'redux';
-import settings from './settings.reducer';
-import leads from './leads.reducer';
-import contacts from './contacts.reducer';
+import settings from './settingsReducer';
+import leads from './leadsReducer';
+import contacts from './contactsReducer';
 
-const fuseReducers = combineReducers({
+const reducers = combineReducers({
   settings,
   leads,
   contacts,
 });
 
-export default fuseReducers;
+export default reducers;

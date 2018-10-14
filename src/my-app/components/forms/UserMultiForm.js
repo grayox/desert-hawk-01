@@ -71,7 +71,7 @@ const INITIAL_STATE = {
   geoNation: '',
   geoRegion: '',
   geoLocal: '',
-  geoKey: Date.now(),
+  geoKey: Date.now(), // necessary to re-render GeoSelect component after reset
   
   isValidName: false,
   isValidEmail: false,

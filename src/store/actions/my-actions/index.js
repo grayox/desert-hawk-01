@@ -1,3 +1,3 @@
-export * from './settings.actions';
-export * from './leads.actions';
-export * from './contacts.actions';
+export * from './settingsActions';
+export * from './leadsActions';
+export * from './contactsActions';

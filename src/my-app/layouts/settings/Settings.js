@@ -6,6 +6,7 @@ import { withStyles } from '@material-ui/core/styles';
 
 import SplitScreen from '../SplitScreen'
 import UserMultiForm from 'my-app/components/forms/UserMultiForm';
+import CreateLead from 'my-app/components/forms/CreateLead';
 
 import List from '@material-ui/core/List';
 import ListSubheader from '@material-ui/core/ListSubheader';
@@ -149,7 +150,7 @@ function Settings(props) {
               content={
                 <TextField
                   fullWidth
-                  id="standard-name"
+                  id="standard-email"
                   label="Email"
                   className={classes.textField}
                   // value={this.state.name}
@@ -216,11 +217,14 @@ function Settings(props) {
         </div>
       }
       right={
-        <UserMultiForm
-          heading='Settings'
-          savePath={path}
-          geoStepperLabel='Your location'
-        />
+        <div>
+          <CreateLead />
+          <UserMultiForm
+            heading='Settings'
+            savePath={path}
+            geoStepperLabel='Your location'
+          />
+        </div>
       }
     />
   );

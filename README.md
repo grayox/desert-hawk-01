@@ -44,13 +44,13 @@ Added packages:
 - [`yarn add email-validator`](https://www.npmjs.com/package/email-validator)
 - [`yarn add react-number-format`](https://www.npmjs.com/package/react-number-format)
 - [`yarn add react-redux-firebase redux-firestore`](https://youtu.be/gf5bVfVlNUM?t=104)
-- `yarn add react-materialize`
 
 Removed
 - [`yarn add react-phone-number-input --peer`](https://www.npmjs.com/package/react-phone-number-input)
 - `yarn remove react-phone-number-input`
 - [`yarn add react-intl`](https://www.npmjs.com/package/react-intl)
 - `yarn remove react-intl`
+- `yarn remove react-materialize`
 
 [APP DIRECTORY STRUCTURE](https://github.com/prescottprue/fireadmin)
 [article](https://github.com/davezuko/react-redux-starter-kit/wiki/Fractal-Project-Structure)
